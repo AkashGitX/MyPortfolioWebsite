@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import closingImg from "@assets/WhatsApp_Image_2026-05-07_at_8.39.20_PM_1778166803930.jpeg";
+import closingImg from "@assets/WhatsApp_Image_2026-05-07_at_8.50.30_PM_1778167481916.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,9 +16,9 @@ export default function Closing() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Cinematic parallax on the image
+      // Cinematic parallax — gentle so face stays in frame
       gsap.to(imgRef.current, {
-        yPercent: -18,
+        yPercent: -8,
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -79,7 +79,8 @@ export default function Closing() {
         <img
           src={closingImg}
           alt="Akash Sutradhar"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "center 20%" }}
           data-testid="img-closing"
         />
       </div>

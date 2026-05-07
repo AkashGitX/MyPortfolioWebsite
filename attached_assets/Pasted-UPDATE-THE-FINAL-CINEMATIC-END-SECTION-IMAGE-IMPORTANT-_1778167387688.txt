@@ -1,0 +1,132 @@
+UPDATE THE FINAL CINEMATIC END SECTION IMAGE.
+
+IMPORTANT:
+I will provide a NEW IMAGE for the last section of the portfolio.
+
+REPLACE the current ending image with the new uploaded image.
+
+====================================================
+CRITICAL IMAGE REQUIREMENTS
+====================================================
+
+VERY IMPORTANT:
+DO NOT cut the face.
+DO NOT crop the head.
+DO NOT crop important body parts.
+DO NOT zoom too aggressively.
+
+The full face must remain clearly visible on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+The image should feel:
+- Cinematic
+- Elegant
+- Premium
+- Emotional
+- Professional
+
+====================================================
+IMAGE POSITIONING
+====================================================
+
+Use:
+- object-fit: cover carefully
+- object-position adjustments
+- responsive positioning
+- dynamic scaling
+
+Ensure:
+- Face stays centered
+- No clipping happens on smaller screens
+- Proper responsive image rendering
+
+If necessary:
+- Reduce image zoom slightly
+- Add soft dark overlays instead of cropping
+- Use adaptive container height
+
+====================================================
+FINAL SECTION STYLE
+====================================================
+
+Keep the same premium cinematic section design:
+- Dark luxury aesthetic
+- Peach/orange glow
+- Blur overlays
+- Grain texture
+- Floating particles
+- GSAP reveal animations
+- Slow parallax movement
+- Smooth fade transitions
+
+====================================================
+TEXT OVERLAY
+====================================================
+
+Keep elegant cinematic typography over the image.
+
+Suggested layout:
+Small Label:
+“// THE STORY CONTINUES”
+
+Main Heading:
+“Code is craft. Build with intent.”
+
+Subtitle:
+“Every system I build is a step toward something greater — scalable, meaningful, and lasting.”
+
+Signature:
+“AKASH SUTRADHAR”
+
+====================================================
+RESPONSIVE BEHAVIOR
+====================================================
+
+The section must look premium on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+MOST IMPORTANT:
+The face should NEVER be cropped on mobile view.
+
+Use:
+- Responsive media queries
+- Different object-position values for mobile
+- Better image scaling
+- Smart container sizing
+
+====================================================
+ANIMATION REQUIREMENTS
+====================================================
+
+Keep:
+- GSAP reveal animations
+- Smooth fade-in
+- Slow zoom animation
+- Floating glow elements
+- Cinematic parallax effect
+- Blur fade transitions
+
+OPTIONAL:
+Add:
+- subtle vignette effect
+- cinematic depth blur
+- soft spotlight glow
+
+====================================================
+FINAL GOAL
+====================================================
+
+The final section should feel like:
+- The emotional ending scene of an Awwwards website
+- Cinematic and memorable
+- Premium and elegant
+- Smooth and immersive
+
+MOST IMPORTANT:
+THE FACE MUST BE FULLY VISIBLE WITHOUT CUTTING.
