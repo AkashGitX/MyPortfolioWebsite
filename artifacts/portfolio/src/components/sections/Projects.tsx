@@ -12,8 +12,13 @@ const projects = [
     subtitle: "AI Powered Medical Hub",
     tagline: "Production-grade full-stack healthcare platform",
     description: "Integrating AI-powered report analysis, role-based dashboards, Stripe payments, and real-time video consultation support.",
-    stack: ["Java 17", "Spring Boot 3", "Spring Security 6", "JWT", "PostgreSQL", "Spring AI", "OpenAI", "Stripe", "ZegoCloud"],
+    stack: ["Java 17", "Spring Boot 3", "Spring Security 6", "JWT", "PostgreSQL", "Spring AI", "OpenAI Integration", "Stripe", "ZegoCloud"],
     features: ["AI medical report analysis", "Low-cost medicine finder", "Eye checkup system", "Mental health assessment", "Video consultation", "Stripe payments", "JWT authentication", "Role-based dashboards"],
+    labels: [
+      { key: "AI Integration", value: "Spring AI + OpenAI" },
+      { key: "Payment", value: "Stripe (payment intent flow)" },
+      { key: "Video Call", value: "ZegoCloud" },
+    ],
     github: "https://github.com/AkashGitX/HealthApp-AI-Powered-Medical-Hub",
     accent: "#22c55e",
     icon: "⚕",
@@ -38,7 +43,7 @@ const projects = [
     subtitle: "Production-Style Ecosystem",
     tagline: "Scalable startup-grade booking platform",
     description: "Simulating a real startup ecosystem with secure authentication, Stripe payments, reviews, and hotel owner management workflows.",
-    stack: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "JPA/Hibernate", "TailwindCSS", "Stripe", "Railway"],
+    stack: ["Java", "Spring Boot", "Spring Security", "JWT", "PostgreSQL", "JPA/Hibernate", "Stripe"],
     features: ["40+ secure APIs", "JWT authentication", "Hotel owner workflows", "Seamless booking", "Stripe payments", "Review system", "99% uptime", "500+ daily requests"],
     live: "https://lnkd.in/g6ZiCZRC",
     github: "https://lnkd.in/gjJv8wZT",
@@ -58,7 +63,6 @@ export default function Projects() {
       const container = containerRef.current;
       if (!track || !container) return;
 
-      const cards = track.querySelectorAll(".project-card");
       const totalWidth = track.scrollWidth - container.offsetWidth;
 
       gsap.to(track, {
@@ -72,22 +76,6 @@ export default function Projects() {
           pin: true,
           anticipatePin: 1,
         },
-      });
-
-      cards.forEach((card) => {
-        gsap.fromTo(card,
-          { opacity: 0.4, scale: 0.95 },
-          {
-            opacity: 1, scale: 1, duration: 0.5,
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: gsap.getById("horizontal-scroll"),
-              start: "left center",
-              end: "right center",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
       });
     });
     return () => ctx.revert();
@@ -113,7 +101,7 @@ export default function Projects() {
               style={{ width: "min(85vw, 900px)", height: "65vh", minHeight: "460px" }}
               data-testid={`project-card-${project.id}`}
             >
-              <div className="flex flex-col justify-between p-8 md:p-10 flex-1">
+              <div className="flex flex-col justify-between p-8 md:p-10 flex-1 min-w-0">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <span className="font-mono text-xs tracking-widest uppercase" style={{ color: project.accent }}>
@@ -121,11 +109,11 @@ export default function Projects() {
                     </span>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-black text-foreground mb-1">{project.title}</h3>
-                  <p className="text-primary font-medium mb-4">{project.subtitle}</p>
+                  <p className="text-primary font-medium mb-3">{project.subtitle}</p>
                   {project.flow && (
                     <p className="font-mono text-xs text-muted-foreground mb-3 glass-panel inline-block px-3 py-1 rounded-lg">{project.flow}</p>
                   )}
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base">{project.description}</p>
+                  <p className="text-muted-foreground leading-relaxed mb-5 text-sm md:text-base">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.stack.slice(0, 6).map((tech) => (
@@ -139,9 +127,20 @@ export default function Projects() {
                       </span>
                     )}
                   </div>
+
+                  {"labels" in project && project.labels && (
+                    <div className="flex flex-col gap-1.5 mt-3">
+                      {project.labels.map((label) => (
+                        <div key={label.key} className="flex items-center gap-2 text-xs">
+                          <span className="font-mono text-muted-foreground">{label.key}:</span>
+                          <span className="text-foreground font-medium" style={{ color: project.accent }}>{label.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
-                <div className="flex flex-wrap gap-3" data-testid={`project-links-${project.id}`}>
+                <div className="flex flex-wrap gap-3 mt-4" data-testid={`project-links-${project.id}`}>
                   {project.live && (
                     <a href={project.live} target="_blank" rel="noopener noreferrer"
                       className="magnetic-btn flex items-center gap-2 px-5 py-2 bg-primary text-background font-bold text-sm rounded-full hover:bg-primary/90 transition-all"
@@ -152,7 +151,7 @@ export default function Projects() {
                   )}
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noopener noreferrer"
-                      className="magnetic-btn flex items-center gap-2 px-5 py-2 border border-primary/40 text-foreground text-sm rounded-full hover:border-primary hover:bg-primary/10 transition-all"
+                      className="magnetic-btn flex items-center gap-2 px-5 py-2 border border-white/20 text-foreground text-sm rounded-full hover:border-primary/60 hover:bg-primary/10 hover:shadow-[0_0_16px_rgba(244,177,131,0.15)] transition-all duration-300"
                       data-testid={`btn-code-${project.id}`}
                     >
                       <Github size={14} /> Code

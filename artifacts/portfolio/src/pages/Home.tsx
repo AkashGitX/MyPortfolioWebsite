@@ -13,6 +13,7 @@ import Leadership from "@/components/sections/Leadership";
 import Experience from "@/components/sections/Experience";
 import Profiles from "@/components/sections/Profiles";
 import Contact from "@/components/sections/Contact";
+import Closing from "@/components/sections/Closing";
 import Footer from "@/components/sections/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
 
@@ -85,6 +86,7 @@ export default function Home() {
         <Experience />
         <Profiles />
         <Contact />
+        <Closing />
         <Footer />
       </div>
     </main>

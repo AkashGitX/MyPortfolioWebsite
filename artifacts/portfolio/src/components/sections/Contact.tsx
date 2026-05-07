@@ -1,24 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SiLeetcode } from "react-icons/si";
-import { Mail, Copy, Check, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
+
+function XIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [copied, setCopied] = useState(false);
 
   const email = "aec.csbs.akashsutradhar@gmail.com";
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -61,35 +62,40 @@ export default function Contact() {
         </div>
 
         <div ref={contentRef} className="flex flex-col gap-8">
-          <button
-            onClick={copyEmail}
-            className="group magnetic-btn mx-auto flex items-center gap-4 glass-panel px-8 py-5 rounded-2xl hover:border-primary/40 hover:bg-primary/5 transition-all duration-300"
-            data-testid="btn-copy-email"
-          >
-            <Mail size={20} className="text-primary" />
-            <span className="font-mono text-foreground text-sm md:text-base">{email}</span>
-            <span className="text-muted-foreground group-hover:text-primary transition-colors">
-              {copied ? <Check size={16} className="text-green-400" /> : <Copy size={16} />}
-            </span>
-          </button>
+          <div className="flex justify-center">
+            <a
+              href={`mailto:${email}`}
+              className="group magnetic-btn flex items-center gap-3 glass-panel px-8 py-5 rounded-2xl hover:border-primary/40 hover:bg-primary/5 transition-all duration-500 hover:shadow-[0_0_40px_rgba(244,177,131,0.08)]"
+              data-testid="email-link"
+            >
+              <Mail size={18} className="text-primary shrink-0" />
+              <span className="font-mono text-foreground text-sm md:text-base group-hover:text-primary transition-colors duration-300">
+                {email}
+              </span>
+            </a>
+          </div>
 
-          <div className="flex items-center justify-center gap-6" data-testid="contact-socials">
+          <div className="flex items-center justify-center gap-5" data-testid="contact-socials">
             <a href="https://github.com/AkashGitX" target="_blank" rel="noopener noreferrer"
-              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-all duration-300"
+              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 hover:shadow-[0_0_20px_rgba(244,177,131,0.15)] transition-all duration-300"
               data-testid="contact-github"
-            ><Github size={22} /></a>
+            ><Github size={20} /></a>
             <a href="https://www.linkedin.com/in/akash-sutradhar-b6a305287/" target="_blank" rel="noopener noreferrer"
-              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-[#0a66c2] hover:border-[#0a66c2]/40 transition-all duration-300"
+              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-[#0a66c2] hover:border-[#0a66c2]/40 hover:shadow-[0_0_20px_rgba(10,102,194,0.15)] transition-all duration-300"
               data-testid="contact-linkedin"
-            ><Linkedin size={22} /></a>
+            ><Linkedin size={20} /></a>
+            <a href="https://x.com/Akash_instinct" target="_blank" rel="noopener noreferrer"
+              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-white/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)] transition-all duration-300"
+              data-testid="contact-twitter"
+            ><XIcon size={20} /></a>
             <a href="https://leetcode.com/u/Akash_Sutradhar/" target="_blank" rel="noopener noreferrer"
-              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-[#ffa116] hover:border-[#ffa116]/40 transition-all duration-300"
+              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-[#ffa116] hover:border-[#ffa116]/40 hover:shadow-[0_0_20px_rgba(255,161,22,0.15)] transition-all duration-300"
               data-testid="contact-leetcode"
-            ><SiLeetcode size={22} /></a>
+            ><SiLeetcode size={20} /></a>
             <a href={`mailto:${email}`}
-              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-all duration-300"
+              className="magnetic-btn w-14 h-14 glass-panel rounded-2xl flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 hover:shadow-[0_0_20px_rgba(244,177,131,0.15)] transition-all duration-300"
               data-testid="contact-email"
-            ><Mail size={22} /></a>
+            ><Mail size={20} /></a>
           </div>
 
           <div className="glass-panel rounded-3xl p-8 md:p-10" data-testid="contact-form">

@@ -6,6 +6,14 @@ import heroImg from "@assets/image_1778164113019.png";
 
 const roles = ["Spring Boot", "Microservices", "AI Integration", "System Design"];
 
+function XIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const line1Ref = useRef<HTMLDivElement>(null);
@@ -55,32 +63,32 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center overflow-x-hidden pt-20"
       data-testid="section-hero"
     >
       <div ref={blob1Ref} className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
       <div ref={blob2Ref} className="absolute bottom-1/4 left-1/3 w-80 h-80 rounded-full bg-secondary/10 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-        <div className="lg:col-span-3 flex flex-col gap-6">
+        <div className="lg:col-span-3 flex flex-col gap-6 min-w-0">
 
           <div ref={labelRef} className="flex items-center gap-3 opacity-0" data-testid="hero-label">
-            <span className="w-8 h-px bg-primary" />
+            <span className="w-8 h-px bg-primary shrink-0" />
             <span className="text-primary font-mono text-sm tracking-widest uppercase">Software Engineer</span>
           </div>
 
-          <div className="flex flex-col gap-1 overflow-hidden" data-testid="hero-name">
+          <div className="flex flex-col gap-0 min-w-0" data-testid="hero-name">
             <div
               ref={line1Ref}
-              className="font-black text-foreground leading-[0.9] tracking-tight whitespace-nowrap"
-              style={{ fontSize: "clamp(3.5rem, 10vw, 7.5rem)" }}
+              className="font-black text-foreground tracking-tight leading-none"
+              style={{ fontSize: "clamp(3rem, 9.5vw, 7.5rem)" }}
             >
               AKASH
             </div>
             <div
               ref={line2Ref}
-              className="font-black text-foreground leading-[0.9] tracking-tight whitespace-nowrap"
-              style={{ fontSize: "clamp(3.5rem, 10vw, 7.5rem)" }}
+              className="font-black text-foreground tracking-tight leading-none"
+              style={{ fontSize: "clamp(3rem, 9.5vw, 7.5rem)" }}
             >
               SUTRADHAR
             </div>
@@ -88,7 +96,7 @@ export default function Hero() {
 
           <p
             ref={taglineRef}
-            className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl opacity-0"
+            className="text-muted-foreground text-base md:text-xl leading-relaxed max-w-xl opacity-0"
             data-testid="hero-tagline"
           >
             Building production-grade scalable backend systems with AI-powered integrations and real-world impact.
@@ -124,10 +132,23 @@ export default function Hero() {
             </a>
           </div>
 
-          <div ref={socialsRef} className="flex items-center gap-6 opacity-0" data-testid="hero-socials">
-            <a href="https://github.com/AkashGitX" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="social-github"><Github size={22} /></a>
-            <a href="https://www.linkedin.com/in/akash-sutradhar-b6a305287/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="social-linkedin"><Linkedin size={22} /></a>
-            <a href="https://leetcode.com/u/Akash_Sutradhar/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="social-leetcode"><SiLeetcode size={22} /></a>
+          <div ref={socialsRef} className="flex items-center gap-5 opacity-0" data-testid="hero-socials">
+            <a href="https://github.com/AkashGitX" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              data-testid="social-github"
+            ><Github size={21} /></a>
+            <a href="https://www.linkedin.com/in/akash-sutradhar-b6a305287/" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#0a66c2] transition-colors duration-300"
+              data-testid="social-linkedin"
+            ><Linkedin size={21} /></a>
+            <a href="https://x.com/Akash_instinct" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              data-testid="social-twitter"
+            ><XIcon size={19} /></a>
+            <a href="https://leetcode.com/u/Akash_Sutradhar/" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#ffa116] transition-colors duration-300"
+              data-testid="social-leetcode"
+            ><SiLeetcode size={21} /></a>
           </div>
         </div>
 
@@ -143,7 +164,6 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
-
             <div className="absolute -top-4 -right-4 w-24 h-24 border border-primary/20 rounded-full animate-spin" style={{ animationDuration: "20s" }} />
             <div className="absolute -bottom-6 -left-6 w-16 h-16 border border-secondary/20 rounded-full animate-spin" style={{ animationDuration: "15s", animationDirection: "reverse" }} />
             <div className="absolute top-8 -left-8 glass-panel px-3 py-1.5 rounded-lg font-mono text-xs text-primary whitespace-nowrap">

@@ -1,0 +1,249 @@
+UPDATE THE EXISTING PORTFOLIO WEBSITE WITH THE FOLLOWING IMPROVEMENTS AND FIXES.
+
+IMPORTANT:
+Maintain the same:
+- Premium cinematic design
+- GSAP animations
+- Lenis smooth scrolling
+- Dark luxury aesthetics
+- Awwwards-inspired experience
+- Responsive design
+- Smooth interactions
+- Glassmorphism effects
+- Grain/noise background
+- Floating glow elements
+
+DO NOT redesign the website completely.
+Only improve and refine it.
+
+====================================================
+1. REMOVE EMAIL COPY UI
+====================================================
+
+REMOVE:
+- The email copy-to-clipboard UI
+- The copy icon
+- The floating email card design
+
+DO NOT show:
+- Copy email interaction
+- Clipboard icon
+- Copy animation
+
+ONLY DISPLAY SIMPLE EMAIL TEXT:
+
+aec.csbs.akashsutradhar@gmail.com
+
+Use:
+- Minimal premium typography
+- Elegant spacing
+- Subtle hover glow only
+
+====================================================
+2. FIX HACKATHON SPELLING
+====================================================
+
+CURRENT:
+"HacksPire"
+
+CHANGE TO:
+"HackSpire"
+
+FINAL TEXT:
+
+Finalist — HackSpire Hackathon
+
+Among 2000+ participants. Built HerbalVerse-AI — an AI-powered medicinal plant platform with chatbot insights and image recognition.
+
+====================================================
+3. HEALTHAPP PROJECT UPDATE
+====================================================
+
+UPDATE THE TECH STACK DISPLAY INSIDE HEALTHAPP PROJECT CARD.
+
+REMOVE OLD STACK DISPLAY.
+
+REPLACE WITH:
+
+- Java 17
+- Spring Boot 3
+- Spring Security 6
+- JWT
+- PostgreSQL
+- Spring AI
+- OpenAI Integration
+- Stripe
+- ZegoCloud
+
+Also add these premium labels:
+- AI Integration → Spring AI + OpenAI
+- Payment → Stripe (payment intent flow)
+- Video Call → ZegoCloud
+
+KEEP:
+- Existing cinematic project design
+- Glow effects
+- Glassmorphism
+- Hover interactions
+- Sticky project section
+
+====================================================
+4. HOTEL BOOKING PROJECT UPDATE
+====================================================
+
+UPDATE PROJECT SECTION TO:
+
+Featured Project
+Hotel Booking Platform
+Production-Style Ecosystem
+
+Description:
+Simulating a real startup ecosystem with secure authentication, Stripe payments, reviews, and hotel owner management workflows.
+
+FINAL TECH STACK:
+
+- Java
+- Spring Boot
+- Spring Security
+- JWT
+- PostgreSQL
+- JPA/Hibernate
+- Stripe
+
+Keep:
+- Premium project card layout
+- Cinematic project styling
+- Smooth transitions
+- Floating gradients
+
+====================================================
+5. HERO SECTION TYPOGRAPHY FIX
+====================================================
+
+CURRENT ISSUE:
+The letter "R" in "SUTRADHAR" is cutting on landing page.
+
+FIX:
+- Prevent text overflow
+- Improve responsive typography scaling
+- Fix width handling
+- Improve line-height and spacing
+- Ensure entire word is fully visible
+
+Use:
+- clamp()
+- responsive font scaling
+- overflow prevention
+- balanced text wrapping
+
+IMPORTANT:
+Hero section should look perfect on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+====================================================
+6. ADD TWITTER/X LINK
+====================================================
+
+ADD:
+Twitter/X social icon and link.
+
+URL:
+https://x.com/Akash_instinct
+
+Place:
+- Hero social section
+- Contact section
+- Footer socials
+
+Use:
+- Premium hover animation
+- Glow hover effect
+- Magnetic hover interaction
+
+====================================================
+7. ADD NEW IMAGE AS CINEMATIC END SECTION
+====================================================
+
+I AM PROVIDING ANOTHER IMAGE.
+
+USE THIS IMAGE:
+- At the end of the portfolio
+- As a cinematic closing section
+- With smooth animation effects
+
+SECTION STYLE:
+- Full-width premium section
+- Slow parallax movement
+- Glow overlay
+- Blur gradients
+- Cinematic fade-in
+- Floating particles
+- GSAP reveal animation
+
+OPTIONAL:
+- Add subtle quote overlay
+- Add animated ending message
+- Add smooth zoom animation
+
+The ending section should feel:
+- Emotional
+- Premium
+- Memorable
+- Cinematic
+- Like the ending scene of an Awwwards website
+
+====================================================
+8. FINAL POLISH
+====================================================
+
+Improve:
+- Hero spacing
+- Typography balance
+- Section breathing space
+- Image glow effects
+- Smooth hover transitions
+- Mobile spacing
+- Social icon alignment
+
+KEEP:
+- Dark textured background
+- Peach/orange glow aesthetics
+- Cinematic luxury visuals
+- Premium interactions
+
+====================================================
+9. PERFORMANCE
+====================================================
+
+Ensure:
+- No layout shifts
+- No typography clipping
+- Smooth FPS animations
+- Optimized rendering
+- Responsive image handling
+- Lightweight animations
+
+====================================================
+10. FINAL OUTPUT
+====================================================
+
+Return:
+- Updated HTML
+- Updated CSS
+- Updated JavaScript
+
+Keep code:
+- Clean
+- Modular
+- Well-commented
+- Production-ready
+- Fully responsive
+
+DO NOT break:
+- GSAP animations
+- Lenis scrolling
+- Existing section transitions
+- Responsive layouts

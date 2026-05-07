@@ -22,7 +22,7 @@ const achievements = [
   },
   {
     icon: Zap,
-    title: "Finalist — HacksPire Hackathon",
+    title: "Finalist — HackSpire Hackathon",
     desc: "Among 2000+ participants. Built HerbalVerse-AI — an AI-powered medicinal plant platform with chatbot insights and image recognition.",
     tag: "Hackathon · 2000+ participants",
     color: "#3b5bff",
