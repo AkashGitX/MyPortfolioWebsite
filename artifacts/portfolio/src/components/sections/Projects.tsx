@@ -14,6 +14,7 @@ const projects = [
     description: "Integrating AI-powered report analysis, role-based dashboards, Stripe payments, and real-time video consultation support.",
     stack: ["Java 17", "Spring Boot 3", "Spring Security 6", "JWT", "PostgreSQL", "Spring AI", "OpenAI", "Stripe", "ZegoCloud"],
     features: ["AI medical report analysis", "Low-cost medicine finder", "Eye checkup system", "Mental health assessment", "Video consultation", "Stripe payments", "JWT authentication", "Role-based dashboards"],
+    github: "https://github.com/AkashGitX/HealthApp-AI-Powered-Medical-Hub",
     accent: "#22c55e",
     icon: "⚕",
   },

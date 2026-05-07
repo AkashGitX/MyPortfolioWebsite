@@ -1,0 +1,210 @@
+UPDATE THE EXISTING PORTFOLIO WEBSITE WITH THE FOLLOWING CHANGES.
+
+IMPORTANT:
+Keep the same premium cinematic design, animations, GSAP interactions, Lenis smooth scrolling, dark luxury theme, glow effects, and Awwwards-inspired aesthetics.
+
+DO NOT BREAK:
+- Existing animations
+- Smooth scrolling
+- Responsive design
+- GSAP transitions
+- Project card interactions
+- Mobile responsiveness
+- Cinematic design system
+
+====================================================
+1. HERO SECTION FIX
+====================================================
+
+CURRENT ISSUE:
+The name split looks bad:
+"AKASH SUT
+RADHAR"
+
+FIX IT.
+
+DISPLAY NAME PROPERLY AS:
+
+AKASH
+SUTRADHAR
+
+OR
+
+AKASH SUTRADHAR
+
+depending on screen width.
+
+IMPORTANT:
+- Prevent awkward line breaks.
+- Use responsive typography scaling.
+- Maintain premium oversized typography.
+- Keep cinematic layout intact.
+
+====================================================
+2. CHANGE TITLE
+====================================================
+
+REMOVE:
+"JAVA BACKEND DEVELOPER"
+
+REPLACE WITH:
+"SOFTWARE ENGINEER"
+
+This should appear:
+- In the top-left small label
+- Hero section
+- Footer
+- Metadata
+- Anywhere else relevant
+
+====================================================
+3. EDUCATION SECTION UPDATE
+====================================================
+
+CURRENT:
+"B.Tech CSBS"
+
+REPLACE WITH:
+"B.Tech in Computer Science and Business Systems"
+
+Maintain elegant typography and spacing.
+
+====================================================
+4. HEALTHAPP PROJECT UPDATE
+====================================================
+
+ADD GITHUB BUTTON/LINK TO HEALTHAPP PROJECT.
+
+GitHub:
+https://github.com/AkashGitX/HealthApp-AI-Powered-Medical-Hub
+
+Inside HealthApp project card:
+- Add premium animated GitHub button
+- Add hover glow effect
+- Add smooth transitions
+- Keep consistent with existing project buttons
+
+====================================================
+5. FOOTER UPDATE
+====================================================
+
+CURRENT:
+© 2025 • Java Backend Developer
+
+CHANGE TO:
+© 2026 • Software Engineer
+
+Keep:
+- Monospace premium footer styling
+- Minimal luxury aesthetics
+- Smooth hover animations
+
+====================================================
+6. ROLE UPDATE ACROSS WEBSITE
+====================================================
+
+REPLACE ALL OCCURRENCES OF:
+"Java Backend Developer"
+
+WITH:
+"Software Engineer"
+
+However:
+KEEP references to:
+- Spring Boot
+- Backend Engineering
+- AI Integration
+- System Design
+inside descriptions and skills.
+
+====================================================
+7. DEVOPS SECTION UPDATE
+====================================================
+
+ADD:
+"Vercel"
+
+inside DevOps / Deployment technologies section.
+
+FINAL DEVOPS STACK SHOULD INCLUDE:
+- Railway
+- Vercel
+- Git
+- GitHub
+- AWS
+- Maven
+
+Add:
+- Floating pill animation
+- Glow hover effect
+- Smooth stagger reveal
+
+====================================================
+8. RESPONSIVE TYPOGRAPHY FIX
+====================================================
+
+The hero typography currently breaks poorly on some screen sizes.
+
+FIX:
+- Proper responsive font scaling
+- Better line-height
+- Better word wrapping
+- Better spacing
+
+Use:
+- clamp()
+- responsive utilities
+- overflow prevention
+- balanced typography
+
+Goal:
+The hero should look premium on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+====================================================
+9. FINAL POLISH
+====================================================
+
+Add:
+- Slightly better spacing in hero section
+- Better alignment between image and text
+- Smooth image hover glow
+- Better visual balance
+
+Keep:
+- Dark luxury texture background
+- Cinematic grain
+- Peach/orange glow aesthetics
+- Glassmorphism effects
+- Premium motion design
+
+====================================================
+10. PERFORMANCE
+====================================================
+
+Ensure:
+- No animation lag
+- No CLS/layout shifts
+- Responsive image rendering
+- Optimized typography rendering
+
+====================================================
+11. FINAL OUTPUT
+====================================================
+
+Return:
+- Updated HTML
+- Updated CSS
+- Updated JS
+
+Keep code:
+- Clean
+- Modular
+- Well-commented
+- Production-ready
+
+DO NOT redesign the whole website.
+Only improve and update it while preserving the premium cinematic visual identity.

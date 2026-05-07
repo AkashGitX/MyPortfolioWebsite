@@ -10,7 +10,7 @@ const skillGroups = [
   { label: "Databases", skills: ["PostgreSQL", "MongoDB", "MySQL"] },
   { label: "AI / ML", skills: ["OpenAI", "Spring AI", "Machine Learning", "Pandas", "NumPy"] },
   { label: "Frontend", skills: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Thymeleaf"] },
-  { label: "DevOps", skills: ["Railway", "Git", "GitHub", "AWS", "Maven"] },
+  { label: "DevOps", skills: ["Railway", "Vercel", "Git", "GitHub", "AWS", "Maven"] },
   { label: "CS Fundamentals", skills: ["DSA", "OOP", "DBMS", "Computer Networks", "System Design"] },
 ];
 

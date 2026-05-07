@@ -5,11 +5,11 @@ import { ArrowDown, Github, Linkedin } from "lucide-react";
 import heroImg from "@assets/image_1778164113019.png";
 
 const roles = ["Spring Boot", "Microservices", "AI Integration", "System Design"];
-const nameChars = "AKASH SUTRADHAR".split("");
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
-  const nameRef = useRef<HTMLDivElement>(null);
+  const line1Ref = useRef<HTMLDivElement>(null);
+  const line2Ref = useRef<HTMLDivElement>(null);
   const taglineRef = useRef<HTMLParagraphElement>(null);
   const labelRef = useRef<HTMLDivElement>(null);
   const pillsRef = useRef<HTMLDivElement>(null);
@@ -24,16 +24,16 @@ export default function Hero() {
 
     tl.fromTo(labelRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" })
       .fromTo(
-        nameRef.current?.children || [],
-        { y: 120, opacity: 0, rotateX: -40 },
-        { y: 0, opacity: 1, rotateX: 0, duration: 1, stagger: 0.04, ease: "power4.out" },
+        [line1Ref.current, line2Ref.current],
+        { y: 80, opacity: 0, skewY: 3 },
+        { y: 0, opacity: 1, skewY: 0, duration: 0.9, stagger: 0.12, ease: "power4.out" },
         "-=0.3"
       )
-      .fromTo(taglineRef.current, { opacity: 0, filter: "blur(8px)", y: 20 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.8, ease: "power2.out" }, "-=0.4")
-      .fromTo(pillsRef.current?.children || [], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }, "-=0.4")
-      .fromTo(btnsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=0.3")
+      .fromTo(taglineRef.current, { opacity: 0, filter: "blur(8px)", y: 20 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.8, ease: "power2.out" }, "-=0.3")
+      .fromTo(pillsRef.current?.children || [], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, ease: "power2.out" }, "-=0.3")
+      .fromTo(btnsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=0.2")
       .fromTo(socialsRef.current, { opacity: 0 }, { opacity: 1, duration: 0.5 }, "-=0.2")
-      .fromTo(imgRef.current, { opacity: 0, scale: 0.9, x: 40 }, { opacity: 1, scale: 1, x: 0, duration: 1, ease: "power3.out" }, "-=1.2");
+      .fromTo(imgRef.current, { opacity: 0, scale: 0.92, x: 40 }, { opacity: 1, scale: 1, x: 0, duration: 1.1, ease: "power3.out" }, "-=1.4");
 
     gsap.to(blob1Ref.current, { x: 30, y: -20, duration: 6, repeat: -1, yoyo: true, ease: "sine.inOut" });
     gsap.to(blob2Ref.current, { x: -20, y: 30, duration: 8, repeat: -1, yoyo: true, ease: "sine.inOut" });
@@ -63,26 +63,26 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         <div className="lg:col-span-3 flex flex-col gap-6">
+
           <div ref={labelRef} className="flex items-center gap-3 opacity-0" data-testid="hero-label">
             <span className="w-8 h-px bg-primary" />
-            <span className="text-primary font-mono text-sm tracking-widest uppercase">Java Backend Developer</span>
+            <span className="text-primary font-mono text-sm tracking-widest uppercase">Software Engineer</span>
           </div>
 
-          <div className="overflow-hidden perspective-1000">
-            <div ref={nameRef} className="flex flex-wrap gap-x-3 gap-y-1" data-testid="hero-name">
-              {nameChars.map((char, i) =>
-                char === " " ? (
-                  <span key={i} className="w-4 md:w-6" />
-                ) : (
-                  <span
-                    key={i}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black text-foreground leading-none tracking-tight inline-block"
-                    style={{ display: "inline-block" }}
-                  >
-                    {char}
-                  </span>
-                )
-              )}
+          <div className="flex flex-col gap-1 overflow-hidden" data-testid="hero-name">
+            <div
+              ref={line1Ref}
+              className="font-black text-foreground leading-[0.9] tracking-tight whitespace-nowrap"
+              style={{ fontSize: "clamp(3.5rem, 10vw, 7.5rem)" }}
+            >
+              AKASH
+            </div>
+            <div
+              ref={line2Ref}
+              className="font-black text-foreground leading-[0.9] tracking-tight whitespace-nowrap"
+              style={{ fontSize: "clamp(3.5rem, 10vw, 7.5rem)" }}
+            >
+              SUTRADHAR
             </div>
           </div>
 
@@ -132,13 +132,13 @@ export default function Hero() {
         </div>
 
         <div className="lg:col-span-2 flex justify-center lg:justify-end" ref={imgRef} data-testid="hero-image">
-          <div className="relative">
-            <div className="absolute inset-0 rounded-3xl bg-primary/20 blur-3xl scale-110 animate-pulse" />
-            <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-3xl overflow-hidden border border-primary/20">
+          <div className="relative group">
+            <div className="absolute inset-0 rounded-3xl bg-primary/20 blur-3xl scale-110 group-hover:scale-125 group-hover:bg-primary/30 transition-all duration-700" />
+            <div className="relative w-64 h-80 md:w-80 md:h-[420px] rounded-3xl overflow-hidden border border-primary/20 group-hover:border-primary/40 transition-all duration-500">
               <img
                 src={heroImg}
                 alt="Akash Sutradhar"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 data-testid="img-hero-photo"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />

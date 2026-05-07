@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
 
         <p className="text-muted-foreground text-sm font-mono">
-          © 2025 · Java Backend Developer
+          © 2026 · Software Engineer
         </p>
 
         <button

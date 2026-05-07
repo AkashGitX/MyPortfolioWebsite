@@ -72,7 +72,7 @@ export default function Experience() {
             </div>
             <span className="font-mono text-xs text-muted-foreground tracking-widest uppercase mb-2 block">Education</span>
             <h3 className="text-2xl font-black text-foreground mb-1">Asansol Engineering College</h3>
-            <p className="text-primary font-medium text-sm mb-1">B.Tech — Computer Science &amp; Business Systems</p>
+            <p className="text-primary font-medium text-sm mb-1">B.Tech in Computer Science and Business Systems</p>
             <p className="text-muted-foreground font-mono text-xs mb-6">2023 – 2027</p>
             <div className="flex items-center gap-4">
               <div className="glass-panel px-5 py-3 rounded-2xl text-center">
