@@ -1,44 +1,56 @@
-# [Project name]
+# Akash Sutradhar — Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium animated developer portfolio for Akash Sutradhar (Java Backend Developer). Single-page React + Vite app with GSAP animations, Lenis smooth scroll, and glassmorphism UI.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/portfolio run dev` — run the portfolio (via workflow)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Frontend: React 19, Vite 7, TailwindCSS v4
+- Animations: GSAP 3 + ScrollTrigger, Lenis smooth scroll
+- Icons: lucide-react, react-icons/si (LeetCode only)
+- Fonts: Plus Jakarta Sans, Inter, JetBrains Mono (Google Fonts)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/portfolio/src/pages/Home.tsx` — main page, Lenis setup, loader state
+- `artifacts/portfolio/src/index.css` — CSS variables, dark warm palette, grain overlay
+- `artifacts/portfolio/src/components/sections/` — all 12 section components
+- `artifacts/portfolio/src/components/ui/CustomCursor.tsx` — GSAP custom cursor
+- `attached_assets/` — personal photos (hero, about, casual)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- State-controlled Loader: `loaderDone` state in Home.tsx so Loader unmounts after animation, preventing interaction blocking.
+- Lenis initialized only after loader completes so smooth scroll doesn't fight with page-entry animations.
+- GSAP ScrollTrigger wired to Lenis via `lenis.on("scroll", ScrollTrigger.update)` for perfect sync.
+- All `SiLinkedin`/`SiGithub` replaced with lucide-react equivalents since react-icons v5 removed them; only `SiLeetcode` remains from react-icons/si.
+- Horizontal pinned scroll in Projects section uses GSAP ScrollTrigger `pin: true` on a flex track.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Cinematic loader: "AKASH / SYSTEMS ARCHITECT" text reveal + clip-path wipe
+- Hero: animated name chars, role pills, floating blobs, professional photo
+- About: event photo, specializations
+- Skills: animated pill grid by category (40+ skills)
+- Projects: GSAP horizontal pinned scroll — HealthApp, WhatsAppExpense-AI, Hotel Booking Platform
+- Achievements: timeline with LeetCode ranks, hackathon finals, Dubai research paper
+- Leadership: AEC Science Club lead card
+- Experience & Education: Euron internship + AEC CSBS details
+- Coding Profiles: GitHub, LinkedIn, LeetCode cards
+- Contact: email copy button, social links, mailto form
+- Custom cursor: dot + lagging ring with hover scale effect
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Dark warm palette: #1f1f1f background, #f4b183 peach accent, #3b5bff blue accent
+- Film grain overlay via SVG feTurbulence at 4% opacity
+- All sections ID-tagged for nav smooth scroll
 
 ## Pointers
 

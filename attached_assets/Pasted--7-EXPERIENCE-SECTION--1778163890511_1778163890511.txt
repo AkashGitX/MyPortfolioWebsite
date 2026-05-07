@@ -1,0 +1,177 @@
+====================================================
+7. EXPERIENCE SECTION
+====================================================
+
+Euron EdTech — Intern
+Nov 2024 – Jan 2025
+
+Responsibilities:
+- Technical collaboration
+- Campus upskilling initiatives
+- Team engagement
+- Technical event contribution
+
+Use:
+- Animated experience cards
+- Scroll reveals
+- Hover transitions
+
+====================================================
+8. EDUCATION SECTION
+====================================================
+
+Asansol Engineering College
+B.Tech in Computer Science & Business Systems
+2023 – 2027
+
+CGPA:
+8.1
+
+Use:
+- Animated academic timeline
+- Floating education visuals
+
+====================================================
+9. CODING PROFILES SECTION
+====================================================
+
+Create animated coding profile cards.
+
+GitHub:
+https://github.com/AkashGitX
+
+LinkedIn:
+https://www.linkedin.com/in/akash-sutradhar-b6a305287/
+
+LeetCode:
+https://leetcode.com/u/Akash_Sutradhar/
+
+Use:
+- Hover animations
+- Magnetic interactions
+- Animated icons
+
+====================================================
+10. CONTACT SECTION
+====================================================
+
+Create futuristic premium contact section.
+
+Include:
+- Animated contact form
+- Floating glowing objects
+- Social links
+- Cinematic footer
+- Smooth hover animations
+
+Buttons:
+- GitHub
+- LinkedIn
+- LeetCode
+- Email
+
+====================================================
+11. WEBSITE ANIMATIONS
+====================================================
+
+MANDATORY GSAP FEATURES:
+- ScrollTrigger
+- Stagger animations
+- Blur reveals
+- Text masking
+- Sticky sections
+- Horizontal scroll
+- Floating objects
+- Mouse-follow interactions
+- Parallax movement
+- Page transitions
+- Loader animation
+
+Use Lenis for:
+- Buttery smooth scrolling
+
+Use LottieFiles for:
+- Loader animation
+- Background animation
+- Scroll indicators
+
+====================================================
+12. RESPONSIVENESS
+====================================================
+
+The website MUST look premium on:
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Especially mobile responsiveness should feel cinematic and smooth like juanmora.co.
+
+Optimize:
+- Typography scaling
+- Section spacing
+- Touch interactions
+- Mobile animations
+- Navigation
+- Scroll performance
+
+====================================================
+13. PERFORMANCE
+====================================================
+
+Optimize:
+- Lazy loading
+- Lightweight animations
+- Efficient rendering
+- Fast loading
+- Smooth FPS animations
+
+====================================================
+14. FILE STRUCTURE
+====================================================
+
+Create:
+- index.html
+- style.css
+- script.js
+- assets folder
+- animations folder
+- images folder
+
+Add:
+- Clean code structure
+- Proper comments
+- Modular animation functions
+
+====================================================
+15. FINAL REQUIREMENTS
+====================================================
+
+The final website should feel:
+- Like an Awwwards-winning website
+- Like a premium startup landing page
+- Like a cinematic developer experience
+- Highly interactive and memorable
+
+It should instantly communicate:
+- Strong backend engineering
+- AI integrations
+- Production-grade systems
+- Security expertise
+- Scalability mindset
+- Modern engineering aesthetic
+
+The portfolio should make recruiters instantly feel:
+“This developer builds real-world production systems.”
+
+IMPORTANT:
+I will upload:
+- My personal images
+- Project screenshots
+- Resume
+- Additional assets
+
+Use them beautifully inside the portfolio with cinematic presentation and smooth animations.
+
+Deploy-ready for:
+- Vercel

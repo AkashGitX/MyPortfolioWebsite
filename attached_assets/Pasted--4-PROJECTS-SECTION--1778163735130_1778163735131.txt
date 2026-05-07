@@ -1,0 +1,163 @@
+====================================================
+4. PROJECTS SECTION
+====================================================
+
+THIS IS THE MOST IMPORTANT SECTION.
+
+Create cinematic horizontally scrolling project showcase.
+
+Use:
+- Sticky scroll sections
+- GSAP horizontal scrolling
+- Image masking
+- Large project visuals
+- Hover zoom
+- Smooth transitions
+- Floating gradient cards
+- Animated project reveal
+- Project spotlight effect
+
+====================================================
+FEATURED PROJECT 1
+====================================================
+
+PROJECT:
+HealthApp — AI Powered Medical Hub
+
+DESCRIPTION:
+A production-grade full-stack healthcare platform integrating AI-powered report analysis, role-based dashboards, Stripe payments, and real-time video consultation support.
+
+TECH STACK:
+- Java 17
+- Spring Boot 3
+- Spring Security 6
+- JWT
+- PostgreSQL
+- Spring AI
+- OpenAI
+- Stripe
+- ZegoCloud
+- Thymeleaf
+- Bootstrap
+- Hibernate/JPA
+
+FEATURES:
+- AI medical report analysis
+- Low-cost medicine finder
+- Eye checkup system
+- Mental health assessment
+- Video consultation support
+- Stripe payment integration
+- JWT authentication
+- Role-based dashboards
+- Doctor management system
+- Secure APIs
+
+Use:
+- Large cinematic preview
+- Animated healthcare UI mockups
+- Floating medical-themed visuals
+- Premium transitions
+
+====================================================
+FEATURED PROJECT 2
+====================================================
+
+PROJECT:
+WhatsAppExpense-AI (BudgetBot AI)
+
+OWNER AVATAR SECTION REQUIRED.
+
+DESCRIPTION:
+An AI-powered WhatsApp expense management platform where users simply message expenses on WhatsApp and the system automatically tracks, categorizes, analyzes, and visualizes spending.
+
+FLOW:
+WhatsApp → AI Processing → Expense Tracking → Analytics Dashboard
+
+LIVE LINK:
+https://focused-encouragement-production-b0cd.up.railway.app/
+
+GITHUB:
+https://github.com/AkashGitX/WhatsAppExpense-AI
+
+TECH STACK:
+- Java 17
+- Spring Boot 3
+- Spring Security
+- JWT
+- Hibernate/JPA
+- PostgreSQL
+- Spring AI
+- OpenAI API
+- Twilio WhatsApp API
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js
+- Railway
+- Maven
+
+FEATURES:
+- AI natural language expense parsing
+- Monthly spending analytics
+- Weekly spending tracking
+- Remaining budget analysis
+- Expense trends
+- Category-wise spending distribution
+- Recent transactions
+- AI-generated insights
+- Secure JWT authentication
+- WhatsApp integration
+
+Use:
+- WhatsApp-inspired animations
+- Floating charts
+- AI-themed UI visuals
+- Dashboard previews
+- Animated data visualizations
+
+====================================================
+FEATURED PROJECT 3
+====================================================
+
+PROJECT:
+Production-Style Hotel Booking Platform
+
+DESCRIPTION:
+A scalable hotel booking platform simulating a real startup ecosystem with secure authentication, Stripe payments, reviews, and owner hotel management workflows.
+
+LIVE:
+https://lnkd.in/g6ZiCZRC
+
+CODE:
+https://lnkd.in/gjJv8wZT
+
+TECH STACK:
+- Java
+- Spring Boot
+- Spring Security
+- JWT
+- PostgreSQL
+- JPA/Hibernate
+- Thymeleaf
+- TailwindCSS
+- Vanilla JS
+- Stripe
+- Railway
+
+FEATURES:
+- 40+ secure APIs
+- JWT authentication
+- Hotel owner workflows
+- Seamless booking system
+- Stripe payment integration
+- Review system
+- High-performance backend
+- 99% uptime architecture
+- 500+ daily request handling capability
+
+Use:
+- Premium hotel booking visuals
+- Animated booking flow
+- Stripe-inspired payment animations
+- Luxury UI aesthetics
